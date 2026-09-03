@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me & CV</title>
+  
+  <meta name="description" content="Biography, personal ethos bridging informatics and visual design, contact details, and CV of Le Nguyen Thu Ha.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/folder.svg">
+  
+  <style>
+    .memo-container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .memo-card {
+      padding: 3rem;
+      position: relative;
+    }
+    .memo-stamp {
+      position: absolute;
+      top: 2rem;
+      right: 2.5rem;
+      transform: rotate(6deg);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent-script);
+      border: 2px dashed var(--accent-script);
+      padding: 6px 14px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .quote-box {
+      border-left: 3px solid var(--accent-script);
+      padding-left: 1.25rem;
+      margin: 1.75rem 0;
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--text-primary);
+      line-height: 1.5;
+      letter-spacing: 0.13rem;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .contact-card-item {
+      padding: 1.25rem;
+      border-radius: var(--radius-md);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: all var(--transition-fast);
+    }
+    .contact-card-item:hover {
+      border-color: var(--accent-script);
+      transform: translateY(-2px);
+    }
+    .contact-label {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+    .contact-val {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    @media (max-width: 640px) {
+      .memo-card { padding: 1.75rem 1.25rem; }
+      .memo-stamp { position: static; display: inline-block; margin-bottom: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="top-nav">
+    <a href="./index.html" class="nav-brand">
+      <span>📁</span>
+      <span>Thu Ha</span>
+      <span class="nav-brand-tag">readme.md</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./academic.html" class="nav-link">academic</a></li>
+        <li><a href="./index.html" class="nav-link">portfolio</a></li>
+        <li><a href="./art.html" class="nav-link">art archive</a></li>
+        <li><a href="./about.html" class="nav-link active">about / cv</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn-theme" aria-label="Toggle Theme" title="Toggle Light/Dark Theme"></button>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="page-container memo-container">
+
+    <article class="glass-card memo-card">
+      <div class="memo-stamp">FILE: README.md</div>
+
+      <div class="page-title-group" style="margin-bottom: 1.75rem;">
+        <span class="page-script-subtitle">biography & ethos</span>
+        <h1 class="page-title" style="font-size: 2.8rem;">About Me</h1>
+      </div>
+
+      <p style="font-size: 1.08rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.5rem;">
+        Hello! I'm <strong>Le Nguyen Thu Ha</strong> (often known as <em>Smooshier</em>). I am a student at <strong>University of Information Technology</strong> in Ho Chi Minh City, Vietnam, focusing on <strong>AI Engineer & Data Science</strong>, alongside a passion for<strong> Photography & Visual Arts</strong>.
+      </p>
+
+      <div class="quote-box">
+        “The arts and sciences are avatars of human creativity."
+      </div>
+
+      <h2 style="font-family: var(--font-serif); font-size: 1.6rem; margin: 2rem 0 0.75rem; color: var(--text-primary);">
+        The Dual Trajectory: Academic & Art
+      </h2>
+
+      <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
+        In my academic journey, I focus on AI, Deep Learning, and Machine Learning research — plus a soft spot for throwing ML/DL at Applied Physics problems. I find genuine joy in translating complex theoretical models into clean, efficient C++ and Python code.
+      </p>
+
+      <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+        Parallel to my studies, I am also a photographer and an art lover. On <a href="https://www.behance.net/lnguynthuh" target="_blank" rel="noopener" style="text-decoration: underline; color: var(--accent-script); font-weight: 600;">Behance (@lnguynthuh)</a>, I've made some graphic design projects, social media visual kits, web layouts, and creative experiments. You can also check out my photos on <a href="https://www.instagram.com/smooshier" target="_blank" rel="noopener" style="text-decoration: underline; color: var(--accent-script); font-weight: 600;">Instagram (@smooshier)</a>.
+      </p>
+
+      <!-- CV Download Section -->
+      <section id="cv" style="margin: 2.5rem 0; padding: 1.75rem; border-radius: var(--radius-md); background: var(--bg-secondary); border: 1px solid var(--border-color);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+            Curriculum Vitae
+            </h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              Haven't finished yet, you can see some of my main project on academic profile page;)
+            </p>
+          </div>
+          
+          <a href="#" class="btn-primary" onclick="window.showToast('WAITTTTT I WILL POST IT LATER'); return false;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download CV (PDF)</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact & Connect -->
+      <h2 style="font-family: var(--font-serif); font-size: 1.6rem; margin: 2rem 0 0.75rem; color: var(--text-primary);">
+        Connect & Collaborations
+      </h2>
+      <p style="color: var(--text-secondary); font-size: 0.95rem;">
+        Whether you want to discuss or collab about, feel free to reach out on:
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-card-item">
+          <span class="contact-label">Behance Portfolio</span>
+          <a href="https://www.behance.net/lnguynthuh" target="_blank" rel="noopener" class="contact-val">
+            /lnguynthuh ↗
+          </a>
+        </div>
+
+        <div class="contact-card-item">
+          <span class="contact-label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/lenguyenthuha/" target="_blank" rel="noopener" class="contact-val">
+            /in/lenguyenthuha ↗
+          </a>
+        </div>
+
+        <div class="contact-card-item">
+          <span class="contact-label">GitHub</span>
+          <a href="https://github.com/lenguyenthuha" target="_blank" rel="noopener" class="contact-val">
+            @lenguyenthuha ↗
+          </a>
+        </div>
+
+        <div class="contact-card-item">
+          <span class="contact-label">Direct Email</span>
+          <a href="#" class="contact-val" data-copy-email="lenguyenthuha@gmail.com" title="Click to copy email address">
+            lenguyenthuha@gmail.com 📋
+          </a>
+        </div>
+      </div>
+
+    </article>
+
+  </main>
+
+  <!-- Page Footer -->
+  <footer class="page-footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="./academic.html" class="footer-link">Academic Profile</a>
+        <a href="./art.html" class="footer-link">Art Archive</a>
+        <a href="./about.html" class="footer-link">About / CV</a>
+        <a href="https://www.linkedin.com/in/lenguyenthuha/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+        <a href="https://github.com/lenguyenthuha" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+      </div>
+      <p>© 2026 Le Nguyen Thu Ha.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

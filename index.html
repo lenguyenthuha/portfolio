@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Nguyen Thu Ha — Portfolio</title>
+  
+  <meta name="description" content="Personal Academic and Art Portfolio of Le Nguyen Thu Ha — Student at University of Information Technology.">
+  <meta property="og:title" content="Le Nguyen Thu Ha — Academic & Art Portfolio">
+  <meta property="og:description" content="Academic and art portfolio.">
+  <meta property="og:type" content="website">
+
+  <!-- Core & Desktop CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/desktop.css">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/folder.svg">
+</head>
+<body>
+
+  <!-- Minimalist Desktop Top Nav -->
+  <header class="top-nav">
+    <a href="./index.html" class="nav-brand">
+      <span style="font-size: 1.25rem;">📁</span>
+      <span>Thu Ha</span>
+      <span class="nav-brand-tag">archive.os</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./academic.html" class="nav-link">academic</a></li>
+        <li><a href="./index.html" class="nav-link active">portfolio</a></li>
+        <li><a href="./art.html" class="nav-link">art archive</a></li>
+        <li><a href="./about.html" class="nav-link">about / cv</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn-theme" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+        <!-- SVG injected by main.js -->
+      </button>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Desktop Canvas Viewport -->
+  <main class="desktop-viewport">
+
+    <!-- Floating Artifacts & Desktop Elements Layer -->
+    <div class="floating-artifacts-layer" aria-hidden="true">
+      
+      <!-- Top Left: Notion Notes -->
+      <div class="desktop-artifact pos-art-1" data-base-rotation="-4">
+        <a href="./about.html" class="app-icon-item" title="Open Personal Memo">
+          <div class="app-icon-box">
+            <img src="./assets/icons/notion.svg" alt="Notion">
+          </div>
+          <span class="app-icon-label">readme.md</span>
+        </a>
+      </div>  
+
+      <!-- Top Right: Research PDF Preview -->
+      <div class="desktop-artifact pos-art-2" data-base-rotation="5">
+        <a href="./academic.html#publications" class="app-icon-item" title="View Research Profile">
+          <div class="file-preview-thumb">
+            <img src="./assets/icons/pdf-doc.svg" alt="PDF">
+          </div>
+          <span class="file-preview-name">research.pdf</span>
+        </a>
+      </div>
+
+      <!-- Mid Left: LinkedIn Profile -->
+      <div class="desktop-artifact pos-art-3" data-base-rotation="3">
+        <a href="https://www.linkedin.com/in/lenguyenthuha/" target="_blank" rel="noopener" class="app-icon-item" title="View LinkedIn Profile">
+          <div class="app-icon-box">
+            <img src="./assets/icons/safari.svg" alt="Safari">
+          </div>
+          <span class="app-icon-label">linkedin.url</span>
+        </a>
+      </div>
+
+      <!-- Mid Right: Behance Creative Portfolio -->
+      <div class="desktop-artifact pos-art-4" data-base-rotation="-3">
+        <a href="https://www.behance.net/lnguynthuh" target="_blank" rel="noopener" class="app-icon-item" title="Visit Behance Profile">
+          <div class="app-icon-box">
+            <img src="./assets/icons/behance.svg" alt="Behance">
+          </div>
+          <span class="app-icon-label">behance.art</span>
+        </a>
+      </div>
+
+      <!-- Bottom Left: Code & Competitive Programming -->
+      <div class="desktop-artifact pos-art-5" data-base-rotation="-5">
+        <a href="https://github.com/lenguyenthuha" target="_blank" rel="noopener" class="app-icon-item" title="Visit GitHub Repositories">
+          <div class="app-icon-box">
+            <img src="./assets/icons/code.svg" alt="Code">
+          </div>
+          <span class="app-icon-label">solution.cpp</span>
+        </a>
+      </div>
+
+      <!-- Bottom Right: Sample Creative Visual -->
+      <div class="desktop-artifact pos-art-6" data-base-rotation="4">
+        <a href="https://www.instagram.com/smooshier/" target="_blank" rel="noopener" class="app-icon-item" title="Visit Instagram Profile">
+          <div class="app-icon-box">
+            <img src="./assets/icons/instagram.svg" alt="Design Preview">
+          </div>
+          <span class="file-preview-name">social_post.png</span>
+        </a>
+      </div>
+
+      <!-- Retro Vector Cursor Hovering on Center -->
+      <div class="retro-cursor-pointer pos-cursor">
+        <img src="./assets/icons/cursor-arrow.svg" alt="Pointer">
+      </div>
+
+    </div>
+
+    <!-- Center Hero Typography -->
+    <div class="hero-typography-group">
+      <span class="hero-script">academic & visual</span>
+      <h1 class="hero-title-chunky">portfolio</h1>
+      <span class="hero-year-badge">(made by smooshier<3)</span>
+    </div>
+
+    <!-- The 2 Main Folders (Hero Dual Interaction) -->
+    <section class="folders-stage" aria-label="Select Category Folder">
+      
+      <!-- Folder 1: Academic & Research -->
+      <a href="./academic.html" class="folder-card" id="folder-academic" title="Open Academic & Research Archive">
+        <div class="folder-icon-wrapper">
+          <div class="folder-peek-sheet">
+            <div class="sheet-line title"></div>
+            <div class="sheet-line"></div>
+            <div class="sheet-line short"></div>
+          </div>
+          <img src="./assets/icons/folder.svg" alt="Academic Folder" class="folder-icon-img">
+        </div>
+
+        <div class="folder-meta">
+          <div class="folder-name-tag">
+            <span>academic</span>
+            <span class="folder-count-pill">Computer Science</span>
+          </div>
+          <span class="folder-sub-caption">Researchs • Projects</span>
+        </div>
+      </a>
+
+      <!-- Folder 2: Art & Visuals -->
+      <a href="./art.html" class="folder-card" id="folder-art" title="Open Art & Visual Portfolio">
+        <div class="folder-icon-wrapper">
+          <div class="folder-peek-sheet">
+            <div class="sheet-line title" style="background: var(--accent-art);"></div>
+            <div class="sheet-line"></div>
+            <div class="sheet-line short"></div>
+          </div>
+          <img src="./assets/icons/folder.svg" alt="Art Folder" class="folder-icon-img">
+        </div>
+
+        <div class="folder-meta">
+          <div class="folder-name-tag">
+            <span>art & visuals</span>
+            <span class="folder-count-pill">Artworks</span>
+          </div>
+          <span class="folder-sub-caption">Graphic Design • Social Media</span>
+        </div>
+      </a>
+
+    </section>
+
+    <!-- Bottom System Status Pill -->
+    <div class="desktop-bottom-status">
+      <span class="status-dot"></span>
+      <span>System: Ready • Click or tap any folder to inspect archive files</span>
+    </div>
+
+  </main>
+
+  <!-- Page Footer -->
+  <footer class="page-footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="./academic.html" class="footer-link">Academic Profile</a>
+        <a href="./art.html" class="footer-link">Art Archive</a>
+        <a href="./about.html" class="footer-link">About / CV</a>
+        <a href="https://www.linkedin.com/in/lenguyenthuha/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+        <a href="https://github.com/lenguyenthuha" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+      </div>
+      <p>© 2026 Le Nguyen Thu Ha.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

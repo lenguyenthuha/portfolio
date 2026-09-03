@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Profile</title>
+  
+  <meta name="description" content="Informatics, competitive programming, algorithmic research, and educational background of Le Nguyen Thu Ha (Vo Nguyen Giap Gifted High School).">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/folder.svg">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="top-nav">
+    <a href="./index.html" class="nav-brand">
+      <span>📁</span>
+      <span>Thu Ha</span>
+      <span class="nav-brand-tag">academic.dir</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./academic.html" class="nav-link active">academic</a></li>
+        <li><a href="./index.html" class="nav-link">portfolio</a></li>
+        <li><a href="./art.html" class="nav-link">art archive</a></li>
+        <li><a href="./about.html" class="nav-link">about / cv</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn-theme" aria-label="Toggle Theme" title="Toggle Light/Dark Theme"></button>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="page-container">
+
+    <!-- Academic Profile Header Card -->
+    <section class="glass-card academic-dossier-header">
+      <div class="dossier-avatar-box">
+        <img src="./assets/images/avatar.jpg" alt="Le Nguyen Thu Ha" class="dossier-avatar-img">
+      </div>
+
+      <div class="dossier-info">
+
+        <h1 class="dossier-name">Le Nguyen Thu Ha</h1>
+        <p class="dossier-role">Focus: <span id="typewriter" class="typewriter-text"></span></p>
+
+        <p class="dossier-bio">
+          Student at <strong>University of Information Technology</strong> in Ho Chi Minh, Vietnam. Dedicated to Machine Learning and Algorithm Optimization. Aspiring to be a Data Scientist and a Researcher.
+        </p>
+
+        <div class="dossier-links-row">
+          <a href="#projects" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            <span>Research & Projects</span>
+          </a>
+
+          <a href="./about.html#cv" class="btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Curriculum Vitae</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/lenguyenthuha/" target="_blank" rel="noopener" class="academic-link-btn" title="View LinkedIn Profile">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://github.com/lenguyenthuha" target="_blank" rel="noopener" class="academic-link-btn" title="View GitHub Repositories">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>GitHub</span>
+          </a>
+
+          <button class="academic-link-btn" data-copy-email="lenguyenthuha@gmail.com" title="Click to copy email address">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Email</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Jump Tabs -->
+    <nav class="jump-nav-container" aria-label="Page Navigation">
+      <a href="#projects" class="jump-tab active">01_Research_&_Projects</a>
+      <a href="#experience" class="jump-tab">02_Experience</a>
+      <a href="#education" class="jump-tab">03_Education</a>
+      <a href="#competences" class="jump-tab">04_Competences</a>
+    </nav>
+
+    <!-- Section 1: Research & Algorithmic Projects -->
+    <section id="projects" style="margin-bottom: 4rem;">
+      <div class="section-title-bar">
+        <h2 class="section-heading">
+          Selected Research, Projects & Publications
+        </h2>
+        <span class="pill-badge academic">Computer Science</span>
+      </div>
+
+      <div class="pub-list">
+        
+        <!-- Project / Publication 1 -->
+        <article class="glass-card pub-card">
+          <div class="pub-card-header">
+            <div class="pub-badge-group">
+              <span class="pub-year">[2026]</span>
+              <span class="pill-badge academic">In Progress</span>
+              <span class="pill-badge">...</span>
+            </div>
+          </div>
+          <h3 class="pub-title">Heading</h3>
+          <p class="pub-authors"><strong>Name</strong> and Research Mentors</p>
+          <p class="pub-venue">Journal of...</p>
+          <div class="pub-actions">
+            <a href="#" class="pub-action-btn">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span>PDF Paper</span>
+            </a>
+            <a href="https://github.com/lenguyenthuha" target="_blank" class="pub-action-btn"><span>Code / C++ Solution</span></a>
+            <button class="pub-action-btn btn-toggle-bibtex" data-target="bib-1">View BibTeX</button>
+            <button class="pub-action-btn btn-copy-bib" data-bib-id="bib-1">Copy BibTeX</button>
+          </div>
+          <pre id="bib-1" class="bibtex-box">{not yet bro}</pre>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Section 2: Experience -->
+    <section id="experience" style="margin-bottom: 4rem;">
+      <div class="section-title-bar">
+        <h2 class="section-heading">
+          Experience & Academic Activities
+        </h2>
+        <span class="pill-badge">Timeline</span>
+      </div>
+
+      <div class="timeline-grid">
+        
+        <div class="glass-card timeline-card">
+          <span class="timeline-period">2026</span>
+          <h3 class="timeline-role">Top 3 Data Explorers 2026</h3>
+          <p class="timeline-org">Data Science Hackathon</p>
+          <p class="timeline-desc">
+            The Data Explorers 2026 Round 2 project by team Aura Farmers builds an end-to-end data pipeline, analytics, and demand forecasting system for Thong Nhat Bicycles.
+          </p>
+        </div>
+
+        <div class="glass-card timeline-card">
+          <span class="timeline-period">2025</span>
+          <h3 class="timeline-role">Top 29 Hack-A-Venture 2025</h3>
+          <p class="timeline-org">Business & Technology Hackathon</p>
+          <p class="timeline-desc">
+            We built a business called Xpiry Market. Xpiry is a live-map app connecting businesses to sell near-expiry food, reducing waste while offering affordable prices to consumers.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Education -->
+    <section id="education" style="margin-bottom: 4rem;">
+      <div class="section-title-bar">
+        <h2 class="section-heading">
+          Educational Background
+        </h2>
+      </div>
+
+      <div class="timeline-grid">
+
+        <div class="glass-card timeline-card">
+          <span class="timeline-period">2025 — Present</span>
+          <h3 class="timeline-role">University of Information Technology - VNUHCM</h3>
+          <p class="timeline-org">Ho Chi Minh City, Vietnam</p>
+          <p class="timeline-desc">
+            Major in Information Systems.
+          </p>
+        </div>
+
+        <div class="glass-card timeline-card">
+          <span class="timeline-period">2022 — 2025</span>
+          <h3 class="timeline-role">Võ Nguyên Giáp Gifted High School</h3>
+          <p class="timeline-org">Quang Tri Province, Vietnam</p>
+          <p class="timeline-desc">
+            Specialized Class in Information Technology.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Competences -->
+    <section id="competences">
+      <div class="section-title-bar">
+        <h2 class="section-heading">
+          Technical Toolkit & Skills
+        </h2>
+      </div>
+
+      <div class="glass-card" style="padding: 2rem;">
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="font-size: 0.95rem; font-family: var(--font-mono); color: var(--text-muted); margin-bottom: 0.75rem;">LANGUAGES & TOOLS</h4>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span class="pill-badge academic">C / C++</span>
+            <span class="pill-badge academic">Python</span>
+            <span class="pill-badge academic">HTML5 / CSS3 / JavaScript</span>
+            <span class="pill-badge academic">Pytorch</span>
+            <span class="pill-badge academic">Docker</span>
+            <span class="pill-badge academic">Git & GitHub</span>
+            <span class="pill-badge academic">LaTeX</span>
+            <span class="pill-badge academic">SQL</span>
+            <span class="pill-badge academic">PowerBI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Page Footer -->
+  <footer class="page-footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="./academic.html" class="footer-link">Academic Profile</a>
+        <a href="./art.html" class="footer-link">Art Archive</a>
+        <a href="./about.html" class="footer-link">About / CV</a>
+        <a href="https://www.linkedin.com/in/lenguyenthuha/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+        <a href="https://github.com/lenguyenthuha" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+      </div>
+      <p>© 2026 Le Nguyen Thu Ha.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/academic.js"></script>
+</body>
+</html>

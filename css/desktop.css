@@ -1,0 +1,445 @@
+/* ==========================================================================
+   DESKTOP CANVAS & FOLDER UI STYLES
+   Faithful recreation of Behance Portfolio 2025 aesthetic
+   ========================================================================== */
+
+.desktop-viewport {
+  position: relative;
+  min-height: calc(100vh - 75px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem 5rem;
+  overflow: hidden;
+}
+
+/* Central Hero Typography Group */
+.hero-typography-group {
+  position: relative;
+  text-align: center;
+  z-index: 20;
+  margin-bottom: 2.5rem;
+  pointer-events: none;
+}
+
+.hero-script {
+  font-family: var(--font-script);
+  font-size: clamp(3.2rem, 7.5vw, 6rem);
+  font-weight: 700;
+  color: var(--accent-script);
+  display: block;
+  transform: rotate(-3.5deg) translateY(10px);
+  letter-spacing: -0.01em;
+  text-shadow: 0 4px 16px rgba(74, 136, 191, 0.15);
+  line-height: 0.9;
+}
+
+.hero-title-chunky {
+  font-family: var(--font-sans);
+  font-size: clamp(3.8rem, 11vw, 9.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+  color: var(--text-primary);
+  text-transform: lowercase;
+  margin: 0.2rem 0;
+  display: block;
+  user-select: none;
+}
+
+.hero-year-badge {
+  font-family: var(--font-mono);
+  font-size: clamp(1.1rem, 2vw, 1.8rem);
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* ==========================================================================
+   HERO TWO FOLDERS DUAL INTERACTION
+   ========================================================================== */
+
+.folders-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  z-index: 25;
+}
+
+.folder-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  transition: transform var(--transition-bounce), filter var(--transition-fast);
+}
+
+.folder-icon-wrapper {
+  position: relative;
+  width: 175px;
+  height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-bounce);
+}
+
+.folder-icon-img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(var(--shadow-folder));
+  transition: transform var(--transition-bounce);
+}
+
+/* Peek Sheet inside Folder */
+.folder-peek-sheet {
+  position: absolute;
+  top: 18px;
+  width: 130px;
+  height: 80px;
+  background: var(--bg-card-solid);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  padding: 8px 10px;
+  gap: 5px;
+  transition: transform var(--transition-bounce), opacity var(--transition-fast);
+  transform: translateY(10px);
+  opacity: 0.85;
+  z-index: 1;
+}
+
+.sheet-line {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--border-card);
+}
+.sheet-line.title {
+  width: 60%;
+  background: var(--accent-script);
+  height: 6px;
+}
+.sheet-line.short {
+  width: 40%;
+}
+
+/* Hover Interaction on Folder */
+.folder-card:hover {
+  transform: translateY(-8px) scale(1.04);
+}
+
+.folder-card:hover .folder-peek-sheet {
+  transform: translateY(-16px) rotate(-2deg);
+  opacity: 1;
+}
+
+.folder-card:hover .folder-icon-img {
+  transform: scale(1.03);
+}
+
+/* Folder Labels & Metas */
+.folder-meta {
+  margin-top: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.folder-name-tag {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  padding: 4px 14px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+
+.folder-card:hover .folder-name-tag {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+.folder-sub-caption {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Badge for items inside */
+.folder-count-pill {
+  font-size: 0.72rem;
+  padding: 1px 7px;
+  border-radius: 10px;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.folder-card:hover .folder-count-pill {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* ==========================================================================
+   FLOATING DESKTOP ARTIFACTS
+   ========================================================================== */
+
+.floating-artifacts-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 30;
+  overflow: hidden;
+}
+
+.desktop-artifact {
+  position: absolute;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: transform var(--transition-smooth), filter var(--transition-fast);
+  user-select: none;
+}
+
+.desktop-artifact:hover {
+  transform: translateY(-6px) scale(1.08) !important;
+  z-index: 50;
+}
+
+/* File Preview Style (e.g. image, pdf, notes) */
+.file-preview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  padding: 8px 8px 10px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 105px;
+  text-align: center;
+  transition: all var(--transition-fast);
+}
+
+.file-preview-thumb {
+  width: 100%;
+  height: 110px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-preview-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.file-preview-name {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90px;
+}
+
+/* App Icon Style (Notion, Figma, Safari, Terminal) */
+.app-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 64px;
+}
+
+.app-icon-box {
+  width: 62px;
+  height: 62px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: transform var(--transition-bounce), box-shadow var(--transition-fast);
+}
+
+.app-icon-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.app-icon-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Retro Cursor Indicator */
+.retro-cursor-pointer {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  pointer-events: none;
+  z-index: 30;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.18));
+  animation: cursorWiggle 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes cursorWiggle {
+  0% { transform: translate(0, 0) rotate(-4deg); }
+  100% { transform: translate(-4px, 8px) rotate(4deg); }
+}
+
+/* Coordinates for Floating Items on Desktop */
+.pos-art-1 { top: 8%; left: 8%; transform: rotate(-4deg); }
+.pos-art-2 { top: 7%; right: 9%; transform: rotate(5deg); }
+.pos-art-3 { top: 40%; left: 6%; transform: rotate(3deg); }
+.pos-art-4 { top: 38%; right: 7%; transform: rotate(-3deg); }
+.pos-art-5 { bottom: 12%; left: 10%; transform: rotate(-5deg); }
+.pos-art-6 { bottom: 10%; right: 12%; transform: rotate(4deg); }
+.pos-cursor { top: 30%; left: 38%; }
+
+/* Gentle Floating Animations */
+@keyframes floatGentle1 {
+  0%, 100% { transform: translateY(0) rotate(-4deg); }
+  50% { transform: translateY(-8px) rotate(-2deg); }
+}
+@keyframes floatGentle2 {
+  0%, 100% { transform: translateY(0) rotate(5deg); }
+  50% { transform: translateY(-10px) rotate(7deg); }
+}
+@keyframes floatGentle3 {
+  0%, 100% { transform: translateY(0) rotate(3deg); }
+  50% { transform: translateY(-8px) rotate(5deg); }
+}
+@keyframes floatGentle4 {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(-10px) rotate(-1deg); }
+}
+@keyframes floatGentle5 {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-8px) rotate(-3deg); }
+}
+@keyframes floatGentle6 {
+  0%, 100% { transform: translateY(0) rotate(4deg); }
+  50% { transform: translateY(-10px) rotate(6deg); }
+}
+
+.pos-art-1 { animation: floatGentle1 6s ease-in-out infinite; }
+.pos-art-2 { animation: floatGentle2 7s ease-in-out infinite; }
+.pos-art-3 { animation: floatGentle3 6.5s ease-in-out infinite; }
+.pos-art-4 { animation: floatGentle4 7.5s ease-in-out infinite; }
+.pos-art-5 { animation: floatGentle5 6.8s ease-in-out infinite; }
+.pos-art-6 { animation: floatGentle6 7.2s ease-in-out infinite; }
+
+/* ==========================================================================
+   QUICK ACTION DOCK & EXPLORER MODAL
+   ========================================================================== */
+
+.desktop-bottom-status {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 18px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 25;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+}
+
+/* ==========================================================================
+   RESPONSIVE CANVAS ADJUSTMENTS
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .folders-stage {
+    gap: 2rem;
+  }
+  .folder-icon-wrapper {
+    width: 140px;
+    height: 115px;
+  }
+  .folder-peek-sheet {
+    width: 105px;
+    height: 65px;
+  }
+  .pos-art-3, .pos-art-4 {
+    display: none; /* Reduce visual clutter on tablets */
+  }
+  .pos-cursor {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .desktop-viewport {
+    padding: 2rem 1rem 4rem;
+  }
+  .hero-script {
+    font-size: 2.8rem;
+  }
+  .hero-title-chunky {
+    font-size: 3.8rem;
+  }
+  .folders-stage {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .folder-icon-wrapper {
+    width: 160px;
+    height: 130px;
+  }
+  .floating-artifacts-layer {
+    display: none; /* Hide free-floating items on small mobile screens to keep canvas pristine */
+  }
+  .desktop-bottom-status {
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Archive</title>
+  
+  <meta name="description" content="Visual design, social media branding, web UI, and digital art portfolio of Le Nguyen Thu Ha on Behance.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/folder.svg">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="top-nav">
+    <a href="./index.html" class="nav-brand">
+      <span>📁</span>
+      <span>Thu Ha</span>
+      <span class="nav-brand-tag">art.dir</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./academic.html" class="nav-link">academic</a></li>
+        <li><a href="./index.html" class="nav-link">portfolio</a></li>
+        <li><a href="./art.html" class="nav-link active">art archive</a></li>
+        <li><a href="./about.html" class="nav-link">about / cv</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn-theme" aria-label="Toggle Theme" title="Toggle Light/Dark Theme"></button>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="page-container">
+
+    <!-- Page Header with Behance Badge -->
+    <div class="page-header">
+      <div class="page-title-group">
+        <span class="page-script-subtitle">creative archive</span>
+        <h1 class="page-title">art & design</h1>
+      </div>
+      <p class="page-description">
+        Graphic design, social media visual identities, typography layouts, and creative experiments by <strong>Le Nguyen Thu Ha</strong>.
+      </p>
+
+      <div style="margin-top: 1.25rem;">
+        <a href="https://www.behance.net/lnguynthuh" target="_blank" rel="noopener" class="btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
+          <span style="font-weight: 800; color: #0057FF; font-size: 1rem;">Bē</span>
+          <span>View Official Behance Profile (behance.net/lnguynthuh) ↗</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Category Filter Bar -->
+    <div class="art-filter-bar" role="tablist">
+      <button class="art-filter-pill active" data-filter="all">all_works.*</button>
+      <button class="art-filter-pill" data-filter="social">social_media.psd</button>
+      <button class="art-filter-pill" data-filter="web">web_design.fig</button>
+      <button class="art-filter-pill" data-filter="branding">branding.ai</button>
+      <button class="art-filter-pill" data-filter="digital">digital_art.png</button>
+      <button class="art-filter-pill" data-filter="generative">creative_code.py</button>
+    </div>
+
+    <!-- Masonry Grid Gallery -->
+    <section class="art-masonry-grid" id="art-gallery">
+      
+      <!-- Artwork 1: Web & Social Media Design 2025 -->
+      <article class="art-card" 
+               data-category="web" 
+               data-title="PORTFOLIO 2025 | Web & Social Media Design" 
+               data-filename="portfolio_2025.fig"
+               data-medium="Figma & Adobe Illustrator • Web Layout"
+               data-year="2025"
+               data-desc="Retro-modern desktop folder UI concept created for personal portfolio showcase. Featuring warm editorial palettes and tactile file-system interactions.">
+        <div class="art-thumb-wrapper">
+          <img src="./assets/images/art_01.svg" alt="Portfolio 2025 Web Design" class="art-thumb-img" loading="lazy">
+        </div>
+        <div class="art-caption-dock">
+          <h3 class="art-card-title">PORTFOLIO 2025 | Web Design</h3>
+          <div class="art-card-meta">
+            <span>web_design.fig</span>
+            <span>2025</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Artwork 2: Social Media Branding -->
+      <article class="art-card" 
+               data-category="social" 
+               data-title="EDITORIAL SOCIAL MEDIA IDENTITY" 
+               data-filename="editorial_campaign.psd"
+               data-medium="Adobe Photoshop • Social Media Kit"
+               data-year="2025"
+               data-desc="Complete Instagram & Facebook visual system featuring typographic hierarchies, high-contrast monochrome imagery, and minimalist framing.">
+        <div class="art-thumb-wrapper">
+          <img src="./assets/images/art_02.svg" alt="Social Media Identity" class="art-thumb-img" loading="lazy">
+        </div>
+        <div class="art-caption-dock">
+          <h3 class="art-card-title">EDITORIAL SOCIAL MEDIA IDENTITY</h3>
+          <div class="art-card-meta">
+            <span>social_media.psd</span>
+            <span>2025</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Artwork 3: School Event Branding -->
+      <article class="art-card" 
+               data-category="branding" 
+               data-title="YOUTH FESTIVAL BRANDING & POSTERS" 
+               data-filename="school_festival.ai"
+               data-medium="Illustrator & InDesign • Print & Digital"
+               data-year="2024"
+               data-desc="Visual identity developed for Võ Nguyên Giáp Gifted High School event. Spanning key visuals, stage backdrops, invitation cards, and online banners.">
+        <div class="art-thumb-wrapper">
+          <img src="./assets/images/art_03.svg" alt="School Festival Branding" class="art-thumb-img" loading="lazy">
+        </div>
+        <div class="art-caption-dock">
+          <h3 class="art-card-title">YOUTH FESTIVAL BRANDING</h3>
+          <div class="art-card-meta">
+            <span>branding.ai</span>
+            <span>2024</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Artwork 4: Creative Generative Coding -->
+      <article class="art-card" 
+               data-category="generative" 
+               data-title="PROCEDURAL HARMONY" 
+               data-filename="generative_study.py"
+               data-medium="Python, Processing & Canvas Shaders"
+               data-year="2026"
+               data-desc="Exploring mathematical symmetry and generative algorithms to produce organically evolving gradient fields and vector compositions.">
+        <div class="art-thumb-wrapper">
+          <img src="./assets/images/art_04.svg" alt="Procedural Harmony" class="art-thumb-img" loading="lazy">
+        </div>
+        <div class="art-caption-dock">
+          <h3 class="art-card-title">PROCEDURAL HARMONY</h3>
+          <div class="art-card-meta">
+            <span>creative_code.py</span>
+            <span>2026</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Artwork 5: Digital Art -->
+      <article class="art-card" 
+               data-category="digital" 
+               data-title="ATMOSPHERIC NOCTURNE" 
+               data-filename="nocturne_sketch.png"
+               data-medium="Digital Painting & Photography Composition"
+               data-year="2024"
+               data-desc="Atmospheric study capturing reflections of street lanterns, neon lights, and quiet urban memories in Đồng Hới at night.">
+        <div class="art-thumb-wrapper">
+          <img src="./assets/images/art_05.svg" alt="Atmospheric Nocturne" class="art-thumb-img" loading="lazy">
+        </div>
+        <div class="art-caption-dock">
+          <h3 class="art-card-title">ATMOSPHERIC NOCTURNE</h3>
+          <div class="art-card-meta">
+            <span>digital_art.png</span>
+            <span>2024</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Artwork 6: Typography Layout -->
+      <article class="art-card" 
+               data-category="branding" 
+               data-title="EXPERIMENTAL TYPOGRAPHY STUDY" 
+               data-filename="type_study.ai"
+               data-medium="Vector Typography & Grid System"
+               data-year="2025"
+               data-desc="Playful juxtaposition of classic serif fonts with modern utilitarian grotesks, exploring negative space and structured rhythm.">
+        <div class="art-thumb-wrapper">
+          <img src="./assets/images/art_06.svg" alt="Typography Study" class="art-thumb-img" loading="lazy">
+        </div>
+        <div class="art-caption-dock">
+          <h3 class="art-card-title">EXPERIMENTAL TYPOGRAPHY STUDY</h3>
+          <div class="art-card-meta">
+            <span>branding.ai</span>
+            <span>2025</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- OS Window Lightbox Modal (macOS Preview style) -->
+  <div class="os-modal-overlay" id="art-lightbox-modal" role="dialog" aria-modal="true" aria-label="Artwork Preview Window">
+    <div class="os-window-frame">
+      
+      <!-- Titlebar with macOS Traffic Lights -->
+      <div class="os-titlebar">
+        <div class="os-traffic-lights">
+          <span class="traffic-dot close" title="Close (Esc)"></span>
+          <span class="traffic-dot min" title="Minimize"></span>
+          <span class="traffic-dot max" title="Expand"></span>
+        </div>
+        <div class="os-window-title" id="os-window-filename">preview_artwork.png</div>
+        <div style="width: 40px;"></div>
+      </div>
+
+      <!-- Window Content Body -->
+      <div class="os-content-body">
+        <div class="os-preview-img-box">
+          <img src="" alt="Artwork Large View" id="os-preview-img">
+        </div>
+
+        <div class="os-image-details">
+          <div>
+            <h2 class="art-card-title" style="font-size: 1.4rem;" id="os-preview-title">Artwork Title</h2>
+            <div class="pill-badge art" id="os-preview-meta" style="margin: 6px 0 10px;">Medium • Year</div>
+            <p style="color: var(--text-secondary); font-size: 0.92rem; max-width: 600px; line-height: 1.6;" id="os-preview-desc">
+              Description text...
+            </p>
+          </div>
+
+          <!-- Navigation Controls -->
+          <div class="os-controls-bar">
+            <button class="os-nav-btn" id="btn-prev-art" aria-label="Previous artwork" title="Previous (Left Arrow)">←</button>
+            <button class="os-nav-btn" id="btn-next-art" aria-label="Next artwork" title="Next (Right Arrow)">→</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Page Footer -->
+  <footer class="page-footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="./index.html" class="footer-link">Home (Canvas)</a>
+        <a href="./academic.html" class="footer-link">Academic Dossier</a>
+        <a href="./about.html" class="footer-link">About / CV</a>
+        <a href="https://www.behance.net/lnguynthuh" target="_blank" rel="noopener" class="footer-link">Behance</a>
+        <a href="https://www.linkedin.com/in/lenguyenthuha/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+        <a href="https://github.com/lenguyenthuha" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+      </div>
+      <p>© 2026 Le Nguyen Thu Ha. Published with GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/art-gallery.js"></script>
+</body>
+</html>
