@@ -1,4 +1,4 @@
-# 📁 Le Nguyen Thu Ha — Academic & Art Portfolio
+# Le Nguyen Thu Ha — Academic & Art Portfolio
 
 A dual-focus personal portfolio website combining **Academic** and **Art**.
 
@@ -8,7 +8,7 @@ A dual-focus personal portfolio website combining **Academic** and **Art**.
 
 1. **Desktop Canvas (`index.html`)**:
    - Editorial Warm Cream canvas simulating a tactile retro-modern digital workstation.
-   - Distinctive typography blending an organic script (*academic & visual*) with bold sans-serif display typography (**portfolio**).
+   - Distinctive typography blending an organic script with bold sans-serif display typography.
    - **Two Interactive Mac-style Folders**:
      - **`academic`**: Leads directly to computer science publications, research profile, and curriculum vitae.
      - **`art & visuals`**: Leads to digital illustrations, drawings, and photography.
